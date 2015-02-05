@@ -1,0 +1,27 @@
+{
+  "name": "es6-study",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "watch": "6to5 src/ -d lib/ --watch --source-maps-inline",
+    "build": "6to5 src/ -d lib/ --source-maps-inline"
+  },
+  "author": "Sho Hashimoto <hashimoto@shokai.org>",
+  "license": "MIT",
+  "dependencies": {
+    "6to5": "^3.3.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "es6"
+  ],
+  "description": "es6 study",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shokai/es6-study.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shokai/es6-study/issues"
+  },
+  "homepage": "https://github.com/shokai/es6-study"
+}
