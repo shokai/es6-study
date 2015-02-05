@@ -17,7 +17,7 @@ var user = new User('shokai');
 user.say();
 
 user.on('hit', (n=1) => { // 引数の初期値が設定できる
- console.log('ouch!'.repeat(n));
+  console.log('ouch!'.repeat(n));
 });
 
 user.emit('hit');
