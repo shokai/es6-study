@@ -2,7 +2,6 @@
 
 - https://github.com/shokai/es6-study
 
-
 ## Install Dependencies
 
     % npm install
@@ -15,6 +14,7 @@
 - convert es6 to es5 with [6to5](https://6to5.org/)
 - use `6to5-node` comamnd to run es6 directry
 - [js2-mode.el](https://github.com/mooz/js2-mode) supports es6 syntax
+- https://github.com/lukehoban/es6features
 
 ### Watch `src/*.es6` and build
 
