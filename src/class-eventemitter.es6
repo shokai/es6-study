@@ -16,8 +16,8 @@ class User extends events{ // class宣言、mix-inによる継承
 var user = new User('shokai');
 user.say();
 
-user.on('hit', (n=1) => { // 引数の初期値が設定できる
-  console.log('ouch!'.repeat(n));
+user.on('hit', function(n=1){ // 引数の初期値が設定できる
+  console.log(`${this.name} : ${'ouch!'.repeat(n)}`); // String.repeat
 });
 
 user.emit('hit');

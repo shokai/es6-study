@@ -1,4 +1,4 @@
-#!/usr/bin/env 6to5-node
+#!/usr/bin/env babel-node
 'use strict';
 
 var foo = (a, b) => {
