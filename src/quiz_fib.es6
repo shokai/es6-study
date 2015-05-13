@@ -1,6 +1,6 @@
-// フィボナッチ数列をどんどん生成してゆっくりprintする
+// フィボナッチ数列をどんどん生成してprintする
 
-var calc = function*(){
+var fibGenerator = function*(){
   var fibs = [0,1,1];
   while(true){
     yield fibs[2];
@@ -9,8 +9,9 @@ var calc = function*(){
   }
 };
 
-var it = calc();
+var it = fibGenerator();
 while(true){
   var res = it.next();
   console.log(res.value);
+  if(res.value === Infinity) break;
 }
