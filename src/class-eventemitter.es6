@@ -2,9 +2,9 @@
 
 var events = require('events').EventEmitter;
 
-
 class User extends events{ // class宣言、mix-inによる継承
   constructor(name){
+    super();
     this.name = name;
   }
 
