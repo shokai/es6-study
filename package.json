@@ -3,8 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "watch": "babel src/ -d lib/ --watch --source-maps-inline",
-    "build": "babel src/ -d lib/ --source-maps-inline"
+    "watch": "babel src/ -d lib/ --watch --source-maps inline",
+    "build": "babel src/ -d lib/ --source-maps inline"
   },
   "author": "Sho Hashimoto <hashimoto@shokai.org>",
   "license": "MIT",
