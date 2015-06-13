@@ -3,13 +3,13 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "watch": "babel src/ -d lib/ --watch --source-maps inline",
-    "build": "babel src/ -d lib/ --source-maps inline"
+    "watch": "babel src/ --out-dir lib/ --source-maps inline --watch",
+    "build": "babel src/ --out-dir lib/ --source-maps inline"
   },
   "author": "Sho Hashimoto <hashimoto@shokai.org>",
   "license": "MIT",
   "dependencies": {
-    "babel": "^5.3.1"
+    "babel": "^5.5.6"
   },
   "devDependencies": {},
   "keywords": [
