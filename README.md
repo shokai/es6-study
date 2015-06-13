@@ -5,7 +5,6 @@
 ## Install Dependencies
 
     % npm install
-    % npm install 6to5 -g
 
 
 ## Note
@@ -16,11 +15,22 @@
 - [js2-mode.el](https://github.com/mooz/js2-mode) supports es6 syntax
 - https://github.com/lukehoban/es6features
 
-### Watch `src/*.es6` and build
+### Build
 
+compile es6
+
+    % npm run build
+    # or
     % npm run watch
 
+### Run
+
+    % node lib/quiz_fib.js
+
+### Test
+
+    % npm test
 
 ### Run es6 file
 
-    % 6to5-node src/class-eventemitter.es6
+    % babel-node src/class-eventemitter.es6
