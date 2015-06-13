@@ -3,15 +3,20 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "watch": "babel src/ --out-dir lib/ --source-maps inline --watch",
-    "build": "babel src/ --out-dir lib/ --source-maps inline"
+    "watch": "parallelshell 'npm run build -- --watch' 'esw src/ --watch'",
+    "build": "babel src/ --out-dir lib/ --source-maps inline",
+    "test": "eslint src/*.es6"
   },
   "author": "Sho Hashimoto <hashimoto@shokai.org>",
   "license": "MIT",
-  "dependencies": {
-    "babel": "^5.5.6"
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "^5.5.6",
+    "babel-eslint": "^3.1.15",
+    "eslint": "^0.22.1",
+    "eslint-watch": "^1.2.3",
+    "parallelshell": "^1.1.1"
   },
-  "devDependencies": {},
   "keywords": [
     "es6"
   ],
