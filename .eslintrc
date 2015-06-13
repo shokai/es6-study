@@ -9,6 +9,7 @@
     "new-cap": 0,
     "comma-spacing": [2, {"before": false, "after": true}],
     "no-unused-vars": 1,
-    "no-constant-condition": 0
+    "no-constant-condition": 0,
+    "no-shadow": 0
   }
 }

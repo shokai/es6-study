@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-var foo = "foo!"
+var foo = "foo!";
 if(true){
   let foo = "bar!";
   console.log(foo);

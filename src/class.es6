@@ -1,18 +1,23 @@
-'use strict'
+"use strict";
 
 var storage = new class Storage {
+
   constructor(){
     this.data = [];
-    this.__defineGetter__('isEmpty', function(){
-      return this.data.length < 1;
-    });
   }
+
+  get isEmpty(){
+    return this.data.length < 1;
+  }
+
   add(obj){
     this.data.push(obj);
   }
+
   remove(obj){
     this.data.splice(this.data.indexOf(obj), 1);
   }
+
   removeAll(...arr){ // 可変長引数
     for(var i = 0; i < arr.length; i++){
       this.remove(arr[i]);
@@ -30,5 +35,5 @@ storage.remove("marutaka");
 console.log(storage.data);
 console.log(storage.isEmpty);
 
-storage.removeAll("kazusuke","marutaka","zanmai");
+storage.removeAll("kazusuke", "marutaka", "zanmai");
 console.log(storage.isEmpty);
