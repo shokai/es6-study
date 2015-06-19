@@ -26,6 +26,8 @@ compile es6
 ### Run
 
     % node dist/quiz_fib.js
+    # or
+    % iojs --harmony src/quiz_fib.es6
 
 ### Test
 
