@@ -25,7 +25,7 @@ compile es6
 
 ### Run
 
-    % node lib/quiz_fib.js
+    % node dist/quiz_fib.js
 
 ### Test
 
