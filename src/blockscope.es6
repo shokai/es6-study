@@ -14,6 +14,6 @@ if(true){
 
 for(let i = 0; i < 10; i++){
   setTimeout(function(){
-    console.log(i)
+    console.log(i);
   }, 500);
 }
