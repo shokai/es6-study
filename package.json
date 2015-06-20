@@ -9,7 +9,9 @@
   },
   "author": "Sho Hashimoto <hashimoto@shokai.org>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^3.9.3"
+  },
   "devDependencies": {
     "babel": "^5.5.6",
     "babel-eslint": "^3.1.15",
