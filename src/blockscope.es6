@@ -10,4 +10,10 @@ console.log(foo);
 if(true){
   let name = "shokai";
 }
-console.log(name);
+// console.log(name);
+
+for(let i = 0; i < 10; i++){
+  setTimeout(function(){
+    console.log(i)
+  }, 500);
+}
