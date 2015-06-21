@@ -6,7 +6,7 @@ class User {
     this.name = name;
   }
   toString(){
-    return `${this.name}`
+    return `${this.name}`;
   }
 }
 

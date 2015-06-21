@@ -1,7 +1,7 @@
 "use strict";
 
 var name = "shokai";
-var web = "http://shokai.org"
+var web = "http://shokai.org";
 
 var o = {name, web};
 
