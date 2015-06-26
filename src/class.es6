@@ -17,12 +17,6 @@ var storage = new class Storage {
   remove(obj){
     this.data.splice(this.data.indexOf(obj), 1);
   }
-
-  removeAll(...arr){ // 可変長引数
-    for(var i = 0; i < arr.length; i++){
-      this.remove(arr[i]);
-    }
-  }
 };
 
 console.log(storage.isEmpty);
@@ -33,7 +27,4 @@ console.log(storage.data);
 
 storage.remove("marutaka");
 console.log(storage.data);
-console.log(storage.isEmpty);
-
-storage.removeAll("kazusuke", "marutaka", "zanmai");
 console.log(storage.isEmpty);
