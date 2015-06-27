@@ -2,7 +2,7 @@
 
 "use strict";
 
-var calcGenerator = function*(first = 2, last = 100){
+var calcGenerator = function*(first, last){
   for(var a = first; a < last; a++){
     for(var b = 2; b < a; b++){
       for(var c = 1; c < b; c++){
@@ -14,9 +14,6 @@ var calcGenerator = function*(first = 2, last = 100){
   }
 };
 
-var it = calcGenerator(3, 50);
-var res;
-
-while( !(res = it.next()).done ){
-  console.log(res.value);
+for(let i of calcGenerator(3, 50)){
+  console.log(i);
 }
