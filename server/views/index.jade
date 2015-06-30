@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h2= "scripts"
+  ul
+    each src in scripts
+      li
+        a(href="/script?src=#{src}")= src
