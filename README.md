@@ -2,20 +2,19 @@
 
 - https://github.com/shokai/es6-study
 
-## Install Dependencies
-
-    % npm install
-
-
 ## Note
-
-- node.js 0.12.x
 - convert es6 to es5 with [babel](https://babeljs.io/)
 - use `babel-node` comamnd to run es6 directry
 - [js2-mode.el](https://github.com/mooz/js2-mode) supports es6 syntax
 - https://github.com/lukehoban/es6features
 
-### Build
+
+## Install Dependencies
+
+    % npm install
+
+
+## Build
 
 compile es6
 
@@ -23,16 +22,20 @@ compile es6
     # or
     % npm run watch
 
-### Run
+## Run
 
-    % node dist/quiz_fib.js
-    # or
-    % iojs src/quiz_fib.es6
+    % node dist/quiz_fib.js  # compiled js
+    % iojs src/quiz_fib.es6  # run es6
+    % babel-node src/class-eventemitter.es6 # run es6
 
-### Test
+### for Web browser
+
+    % npm run server
+
+=> http://localhost:3000
+
+
+## Test
 
     % npm test
 
-### Run es6 file
-
-    % babel-node src/class-eventemitter.es6
