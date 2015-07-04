@@ -5,6 +5,7 @@ if(!process.env.PORT) process.env.PORT = 3000;
 import fs from "fs";
 import path from "path";
 
+import pkg from "../package.json";
 import _ from "lodash";
 import express from "express";
 
@@ -25,6 +26,7 @@ function getScripts(){
 
 router.get("/", (req, res) => {
   res.render("index", {
+    pkg: pkg,
     title: "es6-study",
     scripts: getScripts()
   });
