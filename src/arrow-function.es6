@@ -1,7 +1,7 @@
 "use strict";
 
-var add = (a,b) => {
-  return a+b;
+var add = (a, b) => {
+  return a + b;
 };
 
-console.log(add(1,5));
+console.log(add(1, 5));
