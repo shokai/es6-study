@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "watch": "parallelshell 'npm run build -- --watch' 'esw src/*.es6 server/*.es6 --watch'",
+    "watch": "parallelshell 'npm run build -- --watch' 'esw src/ server/*.es6 --watch'",
     "build": "babel src/ --out-dir dist/ --source-maps inline",
     "test": "eslint src/*.es6 server/*.es6",
     "server": "babel-node server/app.es6",
