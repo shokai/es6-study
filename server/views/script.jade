@@ -2,6 +2,8 @@ extends layout
 
 block content
   a(href="/") back
-  h1= "load "+src
+  h1 load 
+    a(href=src)= src
   p open developer console
   script(src=src)
+  iframe(src=src, width="600", height="600")

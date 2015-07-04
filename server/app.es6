@@ -1,12 +1,14 @@
 "use strict";
 
+if(!process.env.PORT) process.env.PORT = 3000;
+
 import fs from "fs";
 import path from "path";
 
 import _ from "lodash";
 import express from "express";
 
-if(!process.env.PORT) process.env.PORT = 3000;
+express.static.mime.define({"application/javascript": ["es6"]});
 
 var router = express();
 router.set("view engine", "jade");
