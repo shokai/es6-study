@@ -1,6 +1,9 @@
 # es6-study
 
 - https://github.com/shokai/es6-study
+- https://shokai-es6-study.herokuapp.com/
+
+[![Circle CI](https://circleci.com/gh/shokai/es6-study.svg?style=svg)](https://circleci.com/gh/shokai/es6-study)
 
 ## Note
 - convert es6 to es5 with [babel](https://babeljs.io/)
