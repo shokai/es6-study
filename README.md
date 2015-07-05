@@ -27,7 +27,7 @@ compile es6
 
 ## Run
 
-    % node dist/quiz_fib.js  # compiled js
+    % node dist/forof.js  # compiled js
     % iojs src/quiz_fib.es6  # run es6
     % babel-node src/class-eventemitter.es6 # run es6
 
