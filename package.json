@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": ">= 5.2.0"
+  },
   "name": "es6-study",
   "private": true,
   "version": "1.0.0",
