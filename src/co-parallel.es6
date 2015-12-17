@@ -4,7 +4,7 @@ import co from "co";
 require("babel-polyfill");
 
 function delay(msec){
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     console.log(`wait ${msec} msec`);
     setTimeout(() => {
       resolve(`done waiting ${msec} msec`);
